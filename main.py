@@ -1,17 +1,36 @@
 # 파일이름 : 4주차 미션
 # 작 성 자 : 60232294 신지웅
+# 하 는 일 : 도장깨기!  맛집 버킷 리스트
 
-#미션 3
+
+#1. 맛집 빈 리스트 만들기
 bucket_list = []
 
-bucket_list.append(input("맛집 리스트 입력: "))
-bucket_list.append(input("맛집 리스트 입력: "))
-bucket_list.append(input("맛집 리스트 입력: "))
+#2. 맛집 리스트 입력하고 리스트에 추가하기
+restaurant = input("맛집 리스트 입력: ")
+bucket_list.append(restaurant)
 
-print("리스트:", bucket_list)
+restaurant = input("맛집 리스트 입력: ")
+bucket_list.append(restaurant)
 
-bucket_list.insert(0, input("맛집 리스트 추가: "))
-print("리스트:", bucket_list)
+restaurant = input("맛집 리스트 입력: ")
+bucket_list.append(restaurant)
 
-bucket_list.remove(input("도장 깨기: "))
-print("리스트:", bucket_list)
+
+#3. 맛집 리스트 출력
+print(f"리스트:{bucket_list}")
+
+#4. 첫번째로 가려는 맛집을 입력받아 맛집 리스트에 추가
+vip_restaurant = input("맛집 리스트 추가: ")
+bucket_list.insert(0, vip_restaurant)
+
+#5. 맛집 리스트 출력
+print(f"리스트:{bucket_list}")
+
+#6. 도장깨기 후 맛집 리스트에서 제거
+
+visited = input("도장 깨기: ")
+bucket_list.remove(visited)
+
+#7. 맛집 리스트 출력
+print(f"리스트:{bucket_list}")
